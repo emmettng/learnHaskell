@@ -35,7 +35,15 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - FullStackHaskell
-
+  Exception-exe:
+    main:                Main.hs
+    source-dirs:         Exception
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - FullStackHaskell
 tests:
   FullStackHaskell-test:
     main:                Spec.hs
